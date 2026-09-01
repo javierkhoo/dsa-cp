@@ -1,6 +1,6 @@
 # DSA && Competitive Programming
 
-A collection of my solutions and notes for Data Structures, Algorithms, and Competitive Programming, primarily written in C++.
+A collection of my solutions and notes for Data Structures, Algorithms, and Competitive Programming, primarily written in C++. <br />
 Aao, story se code likhe!!
 
 ## Platforms
@@ -59,6 +59,7 @@ Aao, story se code likhe!!
 
 ## Repository Structure
 
+```text
 dsa-cp/
 ├── arrays/
 ├── strings/
@@ -71,6 +72,7 @@ dsa-cp/
 ├── segment-tree/
 ├── union-find/
 └── math/
+```
 
 ## Notes
 
