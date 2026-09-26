@@ -73,7 +73,7 @@ public:
     }
 };
 
-// Approach 3 (using std::find(), cleanest code)
+// Approach 3 (using std::string::find(), cleanest code)
 // T.C : O(m + n)
 // S.C : O(m + n)
 class Solution {
