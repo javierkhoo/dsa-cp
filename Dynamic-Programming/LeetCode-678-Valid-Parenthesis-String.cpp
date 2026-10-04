@@ -2,7 +2,7 @@
 // Problem Link : https://leetcode.com/problems/valid-parenthesis-string/
 
 // Approach 1 (Naive Recursion)
-// T.C : O(3^n)
+// T.C : O(3^n) (TLE)
 // S.C : O(n)
 class Solution {
 public:
