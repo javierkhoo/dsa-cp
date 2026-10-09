@@ -46,6 +46,27 @@ public:
     }
 };
 
+// Approach 1c (Greedy Recurrence - Bottom-Up Tabulation)
+// T.C : O(n)
+// S.C : O(n)
+class Solution {
+public:
+    int minOperation(int n) {
+        // dp[i] = minimum operations required to reach 0 from i using the reversed operations.
+        vector<int> dp(n+1, 0);
+
+        for(int i = 1; i <= n; i++) {
+            if(i % 2 == 0) {
+                dp[i] = 1 + dp[i/2];
+            } else {
+                dp[i] = 1 + dp[i-1];
+            }
+        }
+
+        return dp[n];
+    }
+};
+
 // Approach 2 (Top-Down DP - Forward Thinking)
 // T.C : O(n)
 // S.C : O(n)
