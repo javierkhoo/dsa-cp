@@ -1,7 +1,7 @@
 // GFG          : Minimum Operations to Reach n (similar to LeetCode 2139 Minimum Moves to Reach Target Score)
 // Problem Link : https://www.geeksforgeeks.org/problems/find-optimum-operation4504/1
 
-// Approach 1 (Greedy)
+// Approach 1a (Greedy)
 // T.C : O(logn)
 // S.C : O(1)
 //
@@ -22,6 +22,27 @@ public:
         }
         
         return result;
+    }
+};
+
+// Approach 1b (Greedy - Recursive Implementation)
+// T.C : O(logn)
+// S.C : O(logn)
+class Solution {
+public:
+    // solve(i) = minimum operations required to reach 0 from i using the reversed operations.
+    int solve(int i) {
+        if(i == 0) return 0;
+
+        if(i % 2 == 0) {
+            return 1 + solve(i/2);
+        } else {
+            return 1 + solve(i-1);
+        }
+    }
+
+    int minOperation(int n) {
+        return solve(n);
     }
 };
 
