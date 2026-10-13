@@ -21,9 +21,9 @@ public:
 
 // Approach 2 (Difference Array Technique)
 // Intuition (Difference Array + Prefix Sum):
-//     - Brute Force repeatedly increments every index i >= j for each update j in updates[].
-//     - Instead, use a difference array to record where each increment starts and ends.
-//     - After processing all updates in O(1) time each, compute prefix sums to propagate their contributions and reconstruct the final array.
+//     - Brute Force repeatedly scans through every index i >= j for each update j in updates[].
+//     - Instead, we can use a difference array to record where each increment starts and ends.
+//     - After processing all updates in O(1) time each, we compute prefix sums on diff[] to propagate their contributions and hence reconstruct the final array.
 // T.C : O(n + k)
 // S.C : O(n)
 class Solution {
