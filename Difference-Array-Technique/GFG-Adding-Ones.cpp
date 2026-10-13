@@ -48,3 +48,7 @@ public:
         return arr;
     }
 };
+
+// Approach 3 (Difference Array Technique - O(1) Space)
+// T.C : O(n + k)
+// S.C : O(1)
